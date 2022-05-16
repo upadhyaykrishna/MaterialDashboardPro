@@ -3,13 +3,15 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <div className="w-[64rem] absolute left-[19rem] top-[92rem] flex flex-row text-heading h-10">
+      <div className="w-full text-heading h-10 grid grid-cols-3 grid-rows-1 lg:grid-rows-2 lg:grid-cols-1 lg:text-center lg:gap-y-5">
+        <div className="">
         <p>© 2022, made with by <span className="font-semibold text-grey2">Creative Tim</span> for a better </p>
-        <div className="flex flex-row absolute right-0">
-            <div className="ml-10">Creative TIm</div>
-            <div className="ml-10">About Us</div>
-            <div className="ml-10">Blog</div>
-            <div className="ml-10 mr-5">License</div>
+        </div>
+        <div className="grid grid-cols-4 col-span-2 ml-auto gap-10 lg:ml-0">
+            <div>Creative TIm</div>
+            <div>About Us</div>
+            <div>Blog</div>
+            <div>License</div>
         </div>
       </div>
     </>

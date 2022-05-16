@@ -35,28 +35,28 @@ const data = [
 const Location = () => {
   return (
     <>
-      <div className="left-[19rem] absolute top-[67rem] flex flex-row ">
+      <div className="grid grid-cols-3 gap-6 lg:grid-cols-2 lg:grid-rows-2 md:grid-cols-1 md:grid-rows-3">
         {data.map((element) => {
           return (
-            <div className="w-80 h-96 bg-white text-center rounded-lg mr-5">
+            <div className="w-full h-fit bg-white rounded-lg xl:h-[27rem] mb-10 lg:h-fit lg:mb-5">
               <div>
                 <img
                   src={element.image}
                   alt="can't load image"
-                  className="w-72 relative left-3 -top-5 rounded-lg "
+                  className="w-11/12 relative left-3 -top-5 rounded-lg xl:left-4 md:w-[95%]"
                 />
               </div>
 
-              <p className="text-grey2 text-lg font-medium  w-full">
+              <p className="text-grey2 text-lg font-medium w-full text-center ">
                 {element.place}
               </p>
-              <p className="text-heading ml-6 mr-6 mt-2 ">
+              <p className="text-heading mx-3 mt-2 text-center">
                 {element.description}
               </p>
-              <div className="w-56 h-[1px] bg-line mt-5 ml-12" />
-              <div className="flex-row justify-between flex  text-heading mr-5 ml-5 mt-2 fle">
+              <hr className="mx-14 my-5" />
+              <div className="grid grid-cols-2 text-heading mb-5 mx-3">
                 <p>{element.rate}</p>
-                <p className="ml-20 text-right">{element.location}</p>
+                <p className="text-right">{element.location}</p>
               </div>
             </div>
           );

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import Data from "./Data";
 import Footer from "./Footer";
 import Graphs from "./Graphs";
@@ -9,16 +9,18 @@ import Sales from "./Sales";
 
 const Dashboard = () => {
   return (
-    <div>
+    <>
       <Menu />
-      <Nav />
-      <Sales/>
-      <Graphs/>
-      <Data/>
-      <Location/>
-      <Footer />
-    </div>
-  )
-}
+      <div className="absolute left-[19rem] w-[64rem] grid-rows-6 xl:left-5 xl:pr-5 xl:w-fit">
+       <Nav />
+        <Sales />
+        <Graphs />
+        <Data />
+        <Location />
+        <Footer />
+      </div>
+    </>
+  );
+};
 
-export default Dashboard
+export default Dashboard;

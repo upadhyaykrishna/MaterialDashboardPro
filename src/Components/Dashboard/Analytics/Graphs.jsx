@@ -23,17 +23,17 @@ const graphsBox = [
 
 const Graphs = () => {
   return (
-    <>
-      <div className="absolute left-[19rem] top-[33rem] flex flex-row">
+    <> 
+      <div className="grid grid-cols-3 gap-6 mt-10 lg:grid-cols-2 lg:grid-rows-2 lg:mb-5 md:grid-rows-3 md:grid-cols-1">
         {graphsBox.map((element) => {
           return (
-            <div className=" w-80 h-80 bg-white rounded-lg mr-7">
-              <div className={`w-72 h-52 ${element.bg} relative -top-5 ml-4 rounded-lg`} />
-              <div className="absolute top-52 ml-6 ">
+            <div className="w-full h-80 bg-white rounded-lg mb-10 lg:mb-5 md:w-">
+              <div className={`w-11/12 h-52 ${element.bg} ml-[0.8rem] relative -top-5 rounded-lg max-w-full xl:ml-4 md:w-[96%]`} />
+              <div className="mx-6 xl:ml-5">
                 <p className="text-grey2 font-bold">{element.heading}</p>
                 <p className="text-heading">{element.subHeading}</p>
-                <div className="w-40 h-[1px] bg-line mt-3 ml-12" />
-                <p className="mt-3 text-heading">{element.updatedOn}</p>
+                <hr className="my-3 mx-14"/>
+                <p className="text-heading">{element.updatedOn}</p>
               </div>
             </div>
           );

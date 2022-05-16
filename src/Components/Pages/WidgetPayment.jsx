@@ -3,7 +3,7 @@ import React from "react";
 const WidgetPayment = (props) => {
   return (
     <>
-      <div className="bg-white w-48 h-56 mr-6 rounded-xl grid justify-items-center max-w-lg">
+      <div className="bg-white w-48 h-56 mr-6 rounded-xl grid justify-items-center max-w-lg md:mb-5 sm:w-screen md:flex-grow">
         <div className="bg-blue-500 w-16 h-16 rounded-lg m-4 flex justify-center items-center">
           {props.icon}
         </div>

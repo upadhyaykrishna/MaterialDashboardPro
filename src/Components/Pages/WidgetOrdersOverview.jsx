@@ -41,7 +41,7 @@ const orders = [
 const WidgetOrdersOverview = () => {
   return (
     <>
-      <div className="bg-white w-80 h-[33rem] pt-4 rounded-xl">
+      <div className="bg-white w-80 h-[33rem] pt-4 rounded-xl lg:flex-grow lg:w-full lg:mr-5 lg:h-[30rem]">
         <p className="text-black1 font-bold ml-6">Orders Overview</p>
         <p className="text-heading ml-6 mt-2">24% this month</p>
 

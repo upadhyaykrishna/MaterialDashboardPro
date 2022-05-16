@@ -4,7 +4,7 @@ import SignalWifi4BarIcon from "@mui/icons-material/SignalWifi4Bar";
 const WidgetCard = () => {
   return (
     <div className="lg:flex-wrap">
-      <div className="bg-dark w-80 h-56 rounded-xl text-white lg:w-screen lg:mb-5 ">
+      <div className="bg-dark w-80 h-56 rounded-xl text-white lg:w-screen lg:mb-5 md:mr-5">
         <SignalWifi4BarIcon className="m-5" style={{ color: "white" }} />
         <p className="font-bold text-lg ml-4 mt-5">4562 1122 4594 7852</p>
         <div className="flex flex-row ml-4 mt-10">

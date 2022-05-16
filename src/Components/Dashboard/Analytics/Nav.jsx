@@ -10,8 +10,8 @@ const Nav = () => {
 
   return (
     <>
-      <div className="left-[19rem] mt-7 w-[64rem] flex items-center rounded-lg absolute xl:left-5 max-w-full xl:w-full xl:pr-5 ">
-        <div className="flex flex-row order-1">
+      <div className=" w-full my-7  flex items-center rounded-lg  xl:left-5 sm:grid sm:grid-rows-2 sm:grid-cols-6">
+        <div className="flex flex-row order-1 sm:col-span-6">
           <div className="ml-4">
             <p className="mt-3 text-grey2">
               {" "}
@@ -21,18 +21,18 @@ const Nav = () => {
             <p className="font-bold text-grey2 mb-2">Analytics</p>
           </div>
         </div>
-        <MenuIcon className="mx-10 order-1 xl:order-8 xl:m-2" />
+        <MenuIcon className="mx-10 order-1 xl:order-8 xl:m-2 sm:ml-auto" />
 
         <input
-          className="h-11 ml-auto order-1 bg-transparent border border-slate-300 placeholder:text-base rounded-lg focus:outline-none focus:border-2 focus:border-blue-500"
+          className="h-11 ml-auto order-1 bg-transparent border border-slate-300 placeholder:text-base rounded-lg focus:outline-none focus:border-2 focus:border-blue-500 sm:col-span-2"
           type={"text"}
           value={name}
           placeholder="   Search here"
           onChange={(e) => setName(e.target.value)}
         />
-        <AccountCircleIcon className="m-2 order-1 xl:order-7" color="action" />
-        <SettingsIcon className="m-2 order-1 xl:order-9" color="action" />
-        <NotificationsIcon className="m-2 order-1 xl:order-10" color="action" />
+        <AccountCircleIcon className="m-2 order-1 xl:order-7 sm:ml-auto" color="action" />
+        <SettingsIcon className="m-2 order-1 xl:order-9 sm:ml-auto" color="action" />
+        <NotificationsIcon className="m-2 order-1 xl:order-10 sm:ml-auto" color="action" />
       </div>
     </>
   );

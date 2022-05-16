@@ -5,8 +5,8 @@ import Dashboard from "./Components/Dashboard/Analytics/Dashboard";
 function App() {
   return (
     <div>
-      {/* <Dashboard/> */}
-      <PageWidget/>
+      <Dashboard/>
+      {/* <PageWidget/> */}
     </div>
   );
 }
